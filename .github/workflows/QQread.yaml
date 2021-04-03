@@ -28,7 +28,7 @@ jobs:
           npm install
       - name: '运行 【返利网】'
         run: |
-          node Task/QQread.js
+          node Task/flw.js
         env:
           QQ_QQreadURL: ${{ secrets.QQ_QQreadURL }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
