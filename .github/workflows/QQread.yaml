@@ -4,12 +4,12 @@
 #   branches: 
 #   - master 
 
-name: QQ阅读
+name: flw
 
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/30 0-23 * * *'
+     - cron: '30 14-23 * * *'
   watch:
      types: started
     
@@ -26,7 +26,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【QQ阅读】'
+      - name: '运行 【返利网】'
         run: |
           node Task/QQread.js
         env:
